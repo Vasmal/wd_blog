@@ -1,0 +1,89 @@
+@import url('fonts.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:700');
+
+body {
+  background-color: #f6f6f6;
+  font-family: "Century Gothic Bold", sans-serif;
+
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  background-color: #f6f6f6;
+}
+
+.header__top {
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo-link {
+  margin-right: 50px;
+}
+
+.logo {
+  display: block;
+}
+
+.header__menu {
+  width: 100%;
+  max-width: 705px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  font-family: "Source Code Pro", monospace;
+  line-height: 32px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.main-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.main-menu a {
+display: block;
+color: #000000;
+text-transform: uppercase;
+padding: 22px 10px;
+
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background-color: #ffea00;
+}
