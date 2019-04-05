@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 767 px) {
   .header__menu {
     flex-direction: column;
     align-items: center;
@@ -36,4 +36,32 @@
   #menu-checkbox:checked + .header__menu  .main-menu{
     height: auto;
   }
+
+  .top-banner__title {
+    font-size: 46px;
+    line-height: 59px;
+  }
+
+  .top-banner__description {
+    max-width: 310px;
+  }
+
+  .top-banner__description p {
+    font-size: 16px;
+    line-height: 33px;
+  }
+
+  .top-banner {
+    padding-top: 70px;
+    padding-bottom: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-banner__title {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+
 }
