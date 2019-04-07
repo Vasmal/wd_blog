@@ -548,10 +548,12 @@ footer p {
   letter-spacing: 1.6px;
   text-transform: uppercase;
   color: #fff;
+  transition: 0.3s;
 }
 
 .footer__bottom-nav a:hover,
 .footer__bottom-nav a:focus {
   background-color: #ffea00;
+  color: #000;
 }
 
