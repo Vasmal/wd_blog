@@ -227,8 +227,12 @@ header {
 
 /*portfolio*/
 
-.portfolio {
+.section-centering {
   text-align: center;
+}
+
+.portfolio {
+  margin-bottom: 28px;
 }
 
 .section-title {
@@ -243,7 +247,7 @@ header {
   background-color: #424147;
 }
 
-.portfolio__description {
+.section-description {
   margin: 0;
   margin-bottom: 18px;
   font-size: 16px;
@@ -297,6 +301,19 @@ header {
 }
 
 .gallery__item-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+/*Clients*/
+
+.carousel__item {
+  width: 140px;
+  height: 65px;
+  margin: auto;
+}
+
+.carousel__item img {
   width: 100%;
   height: auto;
 }
