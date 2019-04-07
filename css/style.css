@@ -8,14 +8,15 @@ body {
 }
 
 .visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
-	overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 ul {
@@ -27,6 +28,10 @@ ul {
 a {
   text-decoration: none;
   font: inherit;
+}
+
+section p {
+  color: #424147
 }
 
 .container {
@@ -76,10 +81,10 @@ header {
 }
 
 .main-menu a {
-display: block;
-color: #000000;
-text-transform: uppercase;
-padding: 22px 10px;
+  display: block;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 22px 10px;
 
 }
 
@@ -218,4 +223,80 @@ padding: 22px 10px;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+}
+
+/*portfolio*/
+
+.portfolio {
+  text-align: center;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 30px;
+  display: inline-block;
+  padding: 8px 28px;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffea00;
+  background-color: #424147;
+}
+
+.portfolio__description {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.toggles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.toggles button {
+  border: none;
+  padding: 15px 0;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #424146;  
+  cursor: pointer; 
+}
+
+.toggles button:not(:last-child)::after {
+  content: "/";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.toggles button:hover {
+  color: #ffea00;
+}
+
+.toggles button:hover::after {  
+  color: #424146;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery__item-wrap {
+  display: flex;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+  flex-basis: auto;
+}
+
+.gallery__item-wrap img {
+  width: 100%;
+  height: auto;
 }
